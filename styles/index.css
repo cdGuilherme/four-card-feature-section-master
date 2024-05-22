@@ -1,3 +1,20 @@
 @import url(cssreset.css);
 @import url(variables.css);
 @import url(attribution.css);
+
+main {
+  background-color: var(--very-light-gray);
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2em;
+}
+
+.card {
+  background-color: white;
+  max-width: 21.875rem;
+  box-shadow: 0 1rem 1.5rem var(--grayish-blue);
+}
