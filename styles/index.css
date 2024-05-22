@@ -1,16 +1,37 @@
 @import url(cssreset.css);
 @import url(variables.css);
 @import url(attribution.css);
+@import url(fonts.css);
 
 main {
+  display: flex;
+  flex-direction: column;
   background-color: var(--very-light-gray);
+  font-family: "Poppins";
+  padding: 2em;
+  gap: 5rem;
+}
+
+.introduction {
+  display: grid;
+  gap: 1rem;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */
+.headings {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
 }
 
 .card-section {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 2em;
 }
 
 .card {
