@@ -17,4 +17,40 @@ main {
   background-color: white;
   max-width: 21.875rem;
   box-shadow: 0 1rem 1.5rem var(--grayish-blue);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.card-content > p {
+  margin-top: 0.25rem;
+}
+
+.card-content > img {
+  margin-top: 2rem;
+  float: right;
+}
+
+.line-color {
+  height: 0.25rem;
+}
+
+#supervisor > .line-color {
+  background-color: var(--cyan);
+}
+
+#team-builder > .line-color {
+  background-color: var(--red);
+}
+
+#karma > .line-color {
+  background-color: var(--orange);
+}
+
+#calculator > .line-color {
+  background-color: var(--blue);
 }
