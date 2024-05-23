@@ -2,6 +2,7 @@
 @import url(variables.css);
 @import url(attribution.css);
 @import url(fonts.css);
+
 main {
   display: flex;
   flex-direction: column;
@@ -48,12 +49,14 @@ h1 {
   padding: 2rem;
 }
 
-.card-content p {
-  margin-top: 0.25rem;
-}
-.card-content img {
-  margin-top: 2rem;
-  float: right;
+.card-content {
+  p {
+    margin-top: 0.25rem;
+  }
+  img {
+    margin-top: 2rem;
+    float: right;
+  }
 }
 
 .line-color {
@@ -74,4 +77,4 @@ h1 {
 
 #calculator > .line-color {
   background-color: var(--blue);
-}/*# sourceMappingURL=index.css.map */
+}
