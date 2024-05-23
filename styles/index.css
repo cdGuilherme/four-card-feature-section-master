@@ -1,11 +1,10 @@
 @import url(cssreset.css);
-@import url(variables.css);
 @import url(attribution.css);
 @import url(fonts.css);
 main {
   display: flex;
   flex-direction: column;
-  background-color: var(--very-light-gray);
+  background-color: hsl(0, 0%, 98%);
   font-family: "Poppins";
   padding: 2em;
   gap: 5rem;
@@ -17,7 +16,6 @@ main {
   text-align: center;
 }
 
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */
 .headings {
   display: flex;
   flex-direction: column-reverse;
@@ -36,9 +34,9 @@ h1 {
 }
 
 .card {
-  background-color: white;
+  background-color: #FFFFFF;
   max-width: 21.875rem;
-  box-shadow: 0 1rem 1.5rem var(--grayish-blue);
+  box-shadow: 0 1rem 1.5rem hsl(229, 6%, 66%);
   border-radius: 0.5rem;
   overflow: hidden;
   padding-bottom: 2rem;
@@ -61,17 +59,17 @@ h1 {
 }
 
 #supervisor > .line-color {
-  background-color: var(--cyan);
+  background-color: hsl(180, 62%, 55%);
 }
 
 #team-builder > .line-color {
-  background-color: var(--red);
+  background-color: hsl(0, 78%, 62%);
 }
 
 #karma > .line-color {
-  background-color: var(--orange);
+  background-color: hsl(34, 97%, 64%);
 }
 
 #calculator > .line-color {
-  background-color: var(--blue);
+  background-color: hsl(212, 86%, 64%);
 }/*# sourceMappingURL=index.css.map */

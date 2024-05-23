@@ -1,12 +1,17 @@
 @import url(cssreset.css);
-@import url(variables.css);
+@import url(variables.scss);
 @import url(attribution.css);
 @import url(fonts.css);
 
-main {
+// Sass in 100 Seconds: https://www.youtube.com/watch?v=akDIJa0AP5c
+@mixin flex-column {
   display: flex;
   flex-direction: column;
-  background-color: var(--very-light-gray);
+}
+
+main {
+  @include flex-column;
+  background-color: $very-light-gray;
   font-family: "Poppins";
   padding: 2em;
   gap: 5rem;
@@ -18,7 +23,7 @@ main {
   text-align: center;
 }
 
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */
+// https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
 .headings {
   display: flex;
   flex-direction: column-reverse;
@@ -30,16 +35,15 @@ h1 {
 }
 
 .card-section {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
   gap: 1.5rem;
 }
 
 .card {
-  background-color: white;
+  background-color: $white;
   max-width: 21.875rem;
-  box-shadow: 0 1rem 1.5rem var(--grayish-blue);
+  box-shadow: 0 1rem 1.5rem $grayish-blue;
   border-radius: 0.5rem;
   overflow: hidden;
   padding-bottom: 2rem;
@@ -64,17 +68,17 @@ h1 {
 }
 
 #supervisor > .line-color {
-  background-color: var(--cyan);
+  background-color: $cyan;
 }
 
 #team-builder > .line-color {
-  background-color: var(--red);
+  background-color: $red;
 }
 
 #karma > .line-color {
-  background-color: var(--orange);
+  background-color: $orange;
 }
 
 #calculator > .line-color {
-  background-color: var(--blue);
+  background-color: $blue;
 }
