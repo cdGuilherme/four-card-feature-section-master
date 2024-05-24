@@ -24,7 +24,6 @@ main {
 
 .introduction {
   display: grid;
-  gap: 1rem;
   text-align: center;
 }
 
@@ -38,7 +37,7 @@ h1 {
   font-size: 1.5rem;
 }
 
-.card-section {
+.card--section {
   @include flex-column;
   align-items: center;
   gap: 1.5rem;
@@ -53,36 +52,37 @@ h1 {
   padding-bottom: 2rem;
 }
 
-.card-content {
+.card__content {
   padding: 2rem;
-}
 
-.card-content {
-  p {
+  .content__title {
+    margin: 0;
+  }
+  .content__text {
     margin-top: 0.25rem;
   }
-  img {
+  .content__icon {
     margin-top: 2rem;
     float: right;
   }
 }
 
-.line-color {
+.card__line {
   height: 0.25rem;
 }
 
-#supervisor > .line-color {
+#supervisor > .card__line {
   background-color: v.$cyan;
 }
 
-#team-builder > .line-color {
+#team-builder > .card__line {
   background-color: v.$red;
 }
 
-#karma > .line-color {
+#karma > .card__line {
   background-color: v.$orange;
 }
 
-#calculator > .line-color {
+#calculator > .card__line {
   background-color: v.$blue;
 }

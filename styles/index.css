@@ -16,7 +16,6 @@ main {
 
 .introduction {
   display: grid;
-  gap: 1rem;
   text-align: center;
 }
 
@@ -29,7 +28,7 @@ h1 {
   font-size: 1.5rem;
 }
 
-.card-section {
+.card--section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,34 +44,36 @@ h1 {
   padding-bottom: 2rem;
 }
 
-.card-content {
+.card__content {
   padding: 2rem;
 }
-
-.card-content p {
+.card__content .content__title {
+  margin: 0;
+}
+.card__content .content__text {
   margin-top: 0.25rem;
 }
-.card-content img {
+.card__content .content__icon {
   margin-top: 2rem;
   float: right;
 }
 
-.line-color {
+.card__line {
   height: 0.25rem;
 }
 
-#supervisor > .line-color {
+#supervisor > .card__line {
   background-color: hsl(180, 62%, 55%);
 }
 
-#team-builder > .line-color {
+#team-builder > .card__line {
   background-color: hsl(0, 78%, 62%);
 }
 
-#karma > .line-color {
+#karma > .card__line {
   background-color: hsl(34, 97%, 64%);
 }
 
-#calculator > .line-color {
+#calculator > .card__line {
   background-color: hsl(212, 86%, 64%);
 }/*# sourceMappingURL=index.css.map */
