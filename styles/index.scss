@@ -1,5 +1,6 @@
+// https://stackoverflow.com/questions/17598996/sass-use-variables-across-multiple-files
+@use "variables" as v;
 @import url(cssreset.css);
-@import url(variables.scss);
 @import url(attribution.css);
 @import url(fonts.css);
 
@@ -9,9 +10,13 @@
   flex-direction: column;
 }
 
+.no-margin {
+  margin: 0;
+}
+
 main {
   @include flex-column;
-  background-color: $very-light-gray;
+  background-color: v.$very-light-gray;
   font-family: "Poppins";
   padding: 2em;
   gap: 5rem;
@@ -27,7 +32,6 @@ main {
 .headings {
   display: flex;
   flex-direction: column-reverse;
-  gap: 1rem;
 }
 
 h1 {
@@ -41,9 +45,9 @@ h1 {
 }
 
 .card {
-  background-color: $white;
+  background-color: v.$white;
   max-width: 21.875rem;
-  box-shadow: 0 1rem 1.5rem $grayish-blue;
+  box-shadow: 0 1rem 1.5rem v.$grayish-blue;
   border-radius: 0.5rem;
   overflow: hidden;
   padding-bottom: 2rem;
@@ -68,17 +72,17 @@ h1 {
 }
 
 #supervisor > .line-color {
-  background-color: $cyan;
+  background-color: v.$cyan;
 }
 
 #team-builder > .line-color {
-  background-color: $red;
+  background-color: v.$red;
 }
 
 #karma > .line-color {
-  background-color: $orange;
+  background-color: v.$orange;
 }
 
 #calculator > .line-color {
-  background-color: $blue;
+  background-color: v.$blue;
 }

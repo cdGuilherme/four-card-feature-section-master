@@ -1,6 +1,10 @@
 @import url(cssreset.css);
 @import url(attribution.css);
 @import url(fonts.css);
+.no-margin {
+  margin: 0;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -19,7 +23,6 @@ main {
 .headings {
   display: flex;
   flex-direction: column-reverse;
-  gap: 1rem;
 }
 
 h1 {
@@ -34,7 +37,7 @@ h1 {
 }
 
 .card {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   max-width: 21.875rem;
   box-shadow: 0 1rem 1.5rem hsl(229, 6%, 66%);
   border-radius: 0.5rem;
