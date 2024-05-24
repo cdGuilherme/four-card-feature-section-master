@@ -71,18 +71,37 @@ h1 {
   height: 0.25rem;
 }
 
-#supervisor > .card__line {
-  background-color: v.$cyan;
+// #supervisor > .card__line {
+//   background-color: v.$cyan;
+// }
+
+// #team-builder > .card__line {
+//   background-color: v.$red;
+// }
+
+// #karma > .card__line {
+//   background-color: v.$orange;
+// }
+
+// #calculator > .card__line {
+//   background-color: v.$blue;
+// }
+
+// https://www.koderhq.com/tutorial/sass/iteration-control/
+$i: 1;
+@each $color in v.$card-line-color {
+  #card-#{$i} {
+    .card__line {
+      background-color: nth(v.$card-line-color, $i);
+    }
+  }
+  $i: $i + 1;
 }
 
-#team-builder > .card__line {
-  background-color: v.$red;
-}
-
-#karma > .card__line {
-  background-color: v.$orange;
-}
-
-#calculator > .card__line {
-  background-color: v.$blue;
-}
+// @for $i from 1 through 4 {
+//   #card-#{$i} {
+//     .card__line {
+//       background-color: nth(v.$card-line-color, $i);
+//     }
+//   }
+// }

@@ -62,18 +62,18 @@ h1 {
   height: 0.25rem;
 }
 
-#supervisor > .card__line {
+#card-1 .card__line {
   background-color: hsl(180, 62%, 55%);
 }
 
-#team-builder > .card__line {
+#card-2 .card__line {
   background-color: hsl(0, 78%, 62%);
 }
 
-#karma > .card__line {
+#card-3 .card__line {
   background-color: hsl(34, 97%, 64%);
 }
 
-#calculator > .card__line {
+#card-4 .card__line {
   background-color: hsl(212, 86%, 64%);
 }/*# sourceMappingURL=index.css.map */
