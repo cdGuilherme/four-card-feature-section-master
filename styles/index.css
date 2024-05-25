@@ -30,14 +30,16 @@ h1 {
 
 .card--section {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 1.5rem;
 }
 
 .card {
   background-color: #ffffff;
-  max-width: 21.875rem;
+  width: 100%;
+  max-width: 23.3rem;
   box-shadow: 0 1rem 1.5rem hsl(229, 6%, 66%);
   border-radius: 0.5rem;
   overflow: hidden;
