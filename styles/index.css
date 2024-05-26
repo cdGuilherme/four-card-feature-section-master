@@ -78,4 +78,19 @@ h1 {
 
 #card-4 .card__line {
   background-color: hsl(212, 86%, 64%);
+}
+
+@media screen and (min-width: 72.125rem) {
+  .card--section {
+    display: grid;
+    grid-template: auto auto/auto auto auto;
+  }
+  #card-1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  #card-4 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
 }/*# sourceMappingURL=index.css.map */
