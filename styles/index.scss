@@ -14,6 +14,13 @@
   margin: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 main {
   @include flex-column;
   background-color: v.$very-light-gray;
