@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://www.frontendmentor.io/solutions/four-card-feature-section-solution-y7w3gxdwDQ)
-- [Live Site URL](https://nanikore0.github.io/four-card-feature-section-master/)
+- [Live Site URL](https://cdguilherme.github.io/four-card-feature-section-master/)
 
 ## My process
 
@@ -56,5 +56,5 @@ This project was also a great opportunity to learn more about CSS Grid when alig
 
 ## Author
 
-- Github - [nanikore](https://github.com/nanikore0)
-- Frontend Mentor - [@nanikore0](https://www.frontendmentor.io/profile/nanikore0)
+- Github - [Guilherme Costa](https://github.com/cdGuilherme)
+- Frontend Mentor - [@cdGuilherme](https://www.frontendmentor.io/profile/cdGuilherme)
